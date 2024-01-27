@@ -19,7 +19,7 @@ function Accordion({
     <li>
       <article className='py-6'>
         <div
-          tabIndex={id}
+          tabIndex={0}
           role='button'
           aria-expanded={isOpen}
           className='cursor-pointer flex flex-row justify-between transition-colors'
