@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={work_sans.className}>{children}</body>
+      <body className={`${work_sans.className} bg-secondary-lightPink`}>
+        {children}
+      </body>
     </html>
   )
 }

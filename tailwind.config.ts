@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        mobile: "375px",
+      },
       colors: {
         primary: {
           palePurple: "#8B6990",
@@ -19,6 +22,9 @@ const config: Config = {
           white: "#FFFFFF",
           pink: "#AD28EB",
         },
+      },
+      boxShadow: {
+        containerShadow: "0px 32px 56px 0px rgba(80, 0, 118, 0.10)",
       },
     },
   },
