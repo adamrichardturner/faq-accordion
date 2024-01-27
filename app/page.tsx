@@ -81,6 +81,7 @@ export default function Home() {
     }
   }
 
+  // Render our Accordion components with the data in state
   const faqDataRendered = state.faqs.map((item) => (
     <Accordion
       key={item.id}
@@ -95,9 +96,9 @@ export default function Home() {
 
   return (
     <main className='flex bg-secondary-lightPink min-h-screen flex-col items-center justify-between'>
-      <div className="px-6 pt-6 bg-[url('../assets/images/background-pattern-desktop.svg')] w-full h-[232px] sm:h-[320px] flex flex-row justify-center items-center">
+      <div className="px-6 py-8 bg-[url('../assets/images/background-pattern-desktop.svg')] w-full h-[232px] sm:h-[320px] flex flex-row justify-center items-center">
         <div className='relative top-[20px] w-full sm:w-[600px]'>
-          <section className='px-10 pt-8 rounded-[16px] shadow-containerShadow absolute bg-secondary-white w-full sm:w-[600px]'>
+          <section className='px-10 pb-4 pt-12 rounded-[16px] shadow-containerShadow absolute bg-secondary-white w-full sm:w-[600px]'>
             <div className='flex flex-row space-x-6'>
               <Image src={star} width={40} height={40} alt='A star shape' />
               <h1 className='text-6xl text-primary-darkPurple font-bold'>
